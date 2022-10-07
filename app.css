@@ -1,0 +1,249 @@
+body {   
+    background-color: lightgrey;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+    
+}
+
+.buttons button:hover {
+    transform: scale(1.15);
+    
+}
+
+#whatISee {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bodydarkmode {
+    background-color: rgb(51, 51, 51);
+
+}
+
+.mastermind {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row-reverse;
+     height: 60vh;
+     transition: 1s ease;
+}
+
+.blockDiv {
+    width: 100%;
+    height: 40px;
+}
+
+.mastermindalt {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column-reverse;
+     align-items: center;
+     height: 40vh;
+     transition: 1s ease;
+}
+
+.lightmode {
+    width: 45%;
+    height: auto;
+    background: white;
+    overflow-wrap: break-word;  
+    border: 2px solid black;
+    transition: 1s ease;
+    color: black;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
+
+}
+
+.darkmode {
+    width: 45%;
+    height: auto;
+    background: black;
+    overflow-wrap: break-word;
+    border: 2px solid white;
+    transition: 1s ease;
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    
+}
+
+.ohman {
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.ohman img {
+    position: absolute;
+    width: 50%;
+    animation: arrow 2s ease infinite;
+}
+
+.ohmanbasic {
+    
+        position: relative;
+        width: 30%;
+        height: auto;
+        display: flex;
+        align-items: center;
+}
+
+.ohmanbasic img {
+        visibility: hidden;
+        position: absolute;
+        width: 50%;
+        animation: arrow 2s ease infinite;
+    
+}
+
+@keyframes arrow {
+    from {opacity:0 ; transform: translateX(0px);}
+    to {opacity: 1; transform: translateX(100%);}
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+}
+
+.buttons button {
+    border: 2px solid black;
+    font-weight: 900;
+    color: white;
+    
+    
+}
+
+.Tourner {
+    background-color: rgba(29,20,82,0.78);
+}
+
+.link {
+    background-color: grey;
+}
+
+.deleteText {
+    background-color: rgb(158, 0, 0);
+}
+
+.bold {  
+    background-color: brown;  
+}
+
+#darkMode {
+    background-color: black;
+}
+
+
+.italic {
+    background-color: rgb(118, 247, 118);
+}
+
+.underline {
+     background-color: rgb(6, 6, 240);
+     color: white;
+     font-weight: 900;
+}
+
+
+.progressBar {
+    position: absolute;
+    width: 0;
+    height: 20px;
+    border: 0px solid black;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+.progressBarRed {
+    background-color: red;
+}
+
+.progressBarBorder {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border: 3px solid black;
+    border-right: 4px solid black;
+    
+    
+}
+
+
+
+.mickey {
+    border: 1px solid rgb(0, 255, 234);
+    animation: mickeyborder 1s alternate infinite;
+}
+
+@keyframes mickeyborder {
+    from { box-shadow: 0px 0px 15px 5px rgba(29,20,82,0.78) }
+    to { box-shadow: 0px 0px 15px 5px blue;}
+}
+
+
+.digicode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.digicodecontainer {
+    border: 5px solid black;
+    width: 50vh;
+    height: 70vh;
+}
+
+.digicodescreen {
+    margin: 10px;
+    height: 100px;
+    border: 5px solid rgb(0, 0, 109);
+    background-color: blue;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+}
+
+.digicode-input-container {
+    margin: 10px;
+    border: 2px solid black;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.digibutton {
+    width: 175px;
+    height: 10vh;
+    font-size: 5rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 33%, rgba(255,255,255,1) 100%);
+}
+
+.digibutton:hover {
+    width: 190px;
+    height: 11vh;
+}
