@@ -39,7 +39,7 @@ function bloubiboulga () {
             alert("S'IL VOUS PLAIT CALMEZ-VOUS");
 
             // bloquer l'écriture sans les balises vu que balises ne comptent pas dans les 200
-            myText.setAttribute("maxlength", "0")
+            myText.setAttribute("maxlength", "200")
               
         };
 
@@ -146,9 +146,11 @@ turnAround.addEventListener("click", () => {
     
     if (boxes === document.querySelector('.mastermind')) {
              boxes.classList.replace("mastermind", "mastermindalt");
+             arrow.style.visibility = "hidden";
              
     }  else {
         boxes.classList.replace("mastermindalt", "mastermind")
+        arrow.style.visibility = "visible"
     }
      
 });

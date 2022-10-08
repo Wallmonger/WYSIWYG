@@ -63,6 +63,7 @@ h1 {
     color: black;
     font-weight: 400;
     font-family: 'Courgette', cursive;
+    font-size: 2rem;
 
 }
 
@@ -76,6 +77,7 @@ h1 {
     color: white;
     font-family: 'Courgette', cursive;
     font-weight: 400;
+    font-size: 2rem;
     
 }
 
@@ -225,25 +227,20 @@ h1 {
 }
 
 .digicode-input-container {
-    margin: 10px;
-    border: 2px solid black;
-    height: 55vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 }
 
 
 .digibutton {
-    width: 175px;
-    height: 10vh;
-    font-size: 5rem;
+    width: 15vh;
+    height: 5vh;
+    font-size: 2rem;
     background: rgb(0,0,0);
     background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 33%, rgba(255,255,255,1) 100%);
 }
 
 .digibutton:hover {
-    width: 190px;
-    height: 11vh;
+    font-size: 2.5rem;
 }
