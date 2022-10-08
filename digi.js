@@ -1,7 +1,7 @@
 let digicodeContainer = document.getElementById("digicode-input-container");
 let digicodeScreen = document.getElementById("digicodeScreen")
-
-
+let deleteNumbers = document.getElementById("deleteNumbers")
+let helpNumbers = document.getElementById("help")
 
 let buttonNumbers = [];
 
@@ -44,13 +44,33 @@ let buttonForClick9 = document.getElementById("button9");
 
 function clicking(buttonname) {
    buttonname.addEventListener("click", (e) => {
-      console.log(buttonForClick.innerHTML);
+      
       digicodeScreen.innerHTML = digicodeScreen.innerHTML + buttonname.innerHTML;
+
+      console.log(digicodeScreen.innerHTML);
+      if (digicodeScreen.innerHTML.length > 4) {
+         digicodeScreen.innerHTML = "4 MAX"
+      }
+      if (digicodeScreen.innerHTML === "8999") {
+         digicodeScreen.innerHTML = "BRAVO !"
+      } else if (digicodeScreen.innerHTML === "666") {
+         digicodeScreen.innerHTML = "vade retro"
+      }
+     
    })
    
    
 }
 
+
+
+deleteNumbers.addEventListener("click", () => {
+   digicodeScreen.innerHTML = null;
+})
+
+helpNumbers.addEventListener("click", () => {
+   digicodeScreen.innerHTML = "1k * 9 - 1"
+})
 
 clicking(buttonForClick);
 clicking(buttonForClick1);
@@ -62,8 +82,6 @@ clicking(buttonForClick6);
 clicking(buttonForClick7);
 clicking(buttonForClick8);
 clicking(buttonForClick9);
-
-
 
 
 

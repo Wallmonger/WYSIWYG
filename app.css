@@ -214,6 +214,9 @@ h1 {
     border: 5px solid black;
     width: 50vh;
     height: 70vh;
+    background: url(Img/digibackground.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 .digicodescreen {
@@ -224,12 +227,16 @@ h1 {
     font-size: 6rem;
     text-align: center;
     color: white;
+    font-family: 'Black Ops One', cursive;
+    box-shadow: inset 2px 2px 5px black;
+
 }
 
 .digicode-input-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      font-family: 'Black Ops One', cursive;
 }
 
 
@@ -240,5 +247,13 @@ h1 {
     background: rgb(0,0,0);
     background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 33%, rgba(255,255,255,1) 100%);
     text-align: center;
+    border: 5px solid grey;
+    border-radius: 15px;
 }
 
+.events {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Black Ops One', cursive;
+    
+}
