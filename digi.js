@@ -1,5 +1,5 @@
 let digicodeContainer = document.getElementById("digicode-input-container");
-let digicodeScreen = document.getElementsByClassName("digicodescreen")
+let digicodeScreen = document.getElementById("digicodeScreen")
 
 
 
@@ -22,35 +22,48 @@ for (var i = 0; i<10; i++) {
 
 
 for (var z = 0; z<10; z++) {
-   let button = document.createElement("button");
+   let button = document.createElement("div");
    button.classList.add("digibutton");
+   button.setAttribute("id", "button" + z)
    button.innerHTML = buttonNumbers[z];
    digicodeContainer.appendChild(button);
 };
 
 
 
-buttonForClick = document.querySelector(".digicode")
+let buttonForClick = document.getElementById("button0");
+let buttonForClick1 = document.getElementById("button1");
+let buttonForClick2 = document.getElementById("button2");
+let buttonForClick3 = document.getElementById("button3");
+let buttonForClick4 = document.getElementById("button4");
+let buttonForClick5 = document.getElementById("button5");
+let buttonForClick6 = document.getElementById("button6");
+let buttonForClick7 = document.getElementById("button7");
+let buttonForClick8 = document.getElementById("button8");
+let buttonForClick9 = document.getElementById("button9");
 
-buttonForClick.addEventListener("click", (e) => {
-   console.log("ok");
-   digicodeScreen.innerText = "bro"
-})
-
-
-
-
-/*
-let newArray = [];
-
-function addToArray () {
-    while (newArray < 9) {
-       let random =  Math.floor(Math.random() * 10);
-       console.log(random);
-       newArray.push(random)
-    }
+function clicking(buttonname) {
+   buttonname.addEventListener("click", (e) => {
+      console.log(buttonForClick.innerHTML);
+      digicodeScreen.innerHTML = digicodeScreen.innerHTML + buttonname.innerHTML;
+   })
+   
+   
 }
-addToArray();
-console.log(newArray) */
+
+
+clicking(buttonForClick);
+clicking(buttonForClick1);
+clicking(buttonForClick2);
+clicking(buttonForClick3);
+clicking(buttonForClick4);
+clicking(buttonForClick5);
+clicking(buttonForClick6);
+clicking(buttonForClick7);
+clicking(buttonForClick8);
+clicking(buttonForClick9);
+
+
+
 
 
