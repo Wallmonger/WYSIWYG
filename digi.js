@@ -1,7 +1,8 @@
 let digicodeContainer = document.getElementById("digicode-input-container");
-let digicodeScreen = document.getElementById("digicodeScreen")
-let deleteNumbers = document.getElementById("deleteNumbers")
-let helpNumbers = document.getElementById("help")
+let digicodeScreen = document.getElementById("digicodeScreen");
+let deleteNumbers = document.getElementById("deleteNumbers");
+let helpNumbers = document.getElementById("help");
+let reloadNumbers = document.getElementById("reloadNumbers")
 
 let buttonNumbers = [];
 
@@ -49,12 +50,19 @@ function clicking(buttonname) {
 
       console.log(digicodeScreen.innerHTML);
       if (digicodeScreen.innerHTML.length > 4) {
-         digicodeScreen.innerHTML = "4 MAX"
+         digicodeScreen.innerHTML = "4 MAX";
+        
       }
       if (digicodeScreen.innerHTML === "8999") {
-         digicodeScreen.innerHTML = "BRAVO !"
+         digicodeScreen.innerHTML = "BRAVO !";
+         digicodeScreen.style.background = "yellow";
       } else if (digicodeScreen.innerHTML === "666") {
-         digicodeScreen.innerHTML = "vade retro"
+         digicodeScreen.innerHTML = "vade retro satanas";
+         digicodeScreen.style.background = "red";
+         digicodeScreen.style.fontSize = "3rem"
+      }
+      else {
+         digicodeScreen.style.background = "skyblue"
       }
      
    })
@@ -66,10 +74,15 @@ function clicking(buttonname) {
 
 deleteNumbers.addEventListener("click", () => {
    digicodeScreen.innerHTML = null;
+   
 })
 
 helpNumbers.addEventListener("click", () => {
    digicodeScreen.innerHTML = "1k * 9 - 1"
+})
+
+reloadNumbers.addEventListener("click", () => {
+   location.reload();
 })
 
 clicking(buttonForClick);

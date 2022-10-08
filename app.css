@@ -213,7 +213,7 @@ h1 {
 .digicodecontainer {
     border: 5px solid black;
     width: 50vh;
-    height: 70vh;
+    height: 50vh;
     background: url(Img/digibackground.jpg) no-repeat center;
     background-size: cover;
     border-radius: 5px;
@@ -229,6 +229,7 @@ h1 {
     color: white;
     font-family: 'Black Ops One', cursive;
     box-shadow: inset 2px 2px 5px black;
+    transition: 0.5s ease;
 
 }
 
@@ -243,12 +244,38 @@ h1 {
 .digibutton {
     width: 15vh;
     height: 5vh;
-    font-size: 2rem;
+    font-size: 3rem;
     background: rgb(0,0,0);
     background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 33%, rgba(255,255,255,1) 100%);
     text-align: center;
-    border: 2px solid grey;
+    border: 3px solid grey;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px grey;
+    
+}
+
+
+
+.digibuttone {
+    width: 15vh;
+    height: 5vh;
+    font-size: 2.5rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 33%, rgba(255,255,255,1) 100%);
+    text-align: center;
+    border: 3px solid grey;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    margin: 5px;
+    
+}
+
+
+.digibutton:hover, .digibuttone:hover {
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
 }
 
 .events {
@@ -257,3 +284,4 @@ h1 {
     font-family: 'Black Ops One', cursive;
     
 }
+
