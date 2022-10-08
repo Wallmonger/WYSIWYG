@@ -1,5 +1,5 @@
 let digicodeContainer = document.getElementById("digicode-input-container");
-
+let digicodeScreen = document.getElementsByClassName("digicodescreen")
 
 
 
@@ -8,7 +8,7 @@ let buttonNumbers = [];
 function addNumbers() {
    let randomNumber = Math.floor(Math.random() * 10); 
    if (buttonNumbers.includes(randomNumber)) {
-      console.log("déja dedans");
+      
       addNumbers();
       
    } else {
@@ -22,18 +22,23 @@ for (var i = 0; i<10; i++) {
 
 
 for (var z = 0; z<10; z++) {
-   let div = document.createElement("div");
-   div.classList.add("digibutton")
-   div.innerHTML = buttonNumbers[z];
-   digicodeContainer.appendChild(div);
-}
+   let button = document.createElement("button");
+   button.classList.add("digibutton");
+   button.innerHTML = buttonNumbers[z];
+   digicodeContainer.appendChild(button);
+};
 
 
 
+buttonForClick = document.querySelector(".digicode")
+
+buttonForClick.addEventListener("click", (e) => {
+   console.log("ok");
+   digicodeScreen.innerText = "bro"
+})
 
 
 
-console.log(buttonNumbers)
 
 /*
 let newArray = [];
