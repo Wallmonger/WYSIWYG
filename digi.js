@@ -50,13 +50,11 @@ function clicking(buttonname) {
 
       console.log(digicodeScreen.innerHTML);
       if (digicodeScreen.innerHTML.length === 5) {
-         digicodeScreen.innerHTML = "4 MAX";
-        
-      };
+         digicodeScreen.innerHTML = "4 MAX"; 
+      }
       else if (digicodeScreen.innerHTML.length === 6) {
          digicodeScreen.innerText = null;
-      };
-      
+      }
       else if (digicodeScreen.innerHTML === "8999") {
          digicodeScreen.innerHTML = "BRAVO !";
          digicodeScreen.style.background = "yellow";
