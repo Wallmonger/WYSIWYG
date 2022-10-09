@@ -49,11 +49,15 @@ function clicking(buttonname) {
       digicodeScreen.innerHTML = digicodeScreen.innerHTML + buttonname.innerHTML;
 
       console.log(digicodeScreen.innerHTML);
-      if (digicodeScreen.innerHTML.length > 4) {
+      if (digicodeScreen.innerHTML.length === 5) {
          digicodeScreen.innerHTML = "4 MAX";
         
-      }
-      if (digicodeScreen.innerHTML === "8999") {
+      };
+      else if (digicodeScreen.innerHTML.length === 6) {
+         digicodeScreen.innerText = null;
+      };
+      
+      else if (digicodeScreen.innerHTML === "8999") {
          digicodeScreen.innerHTML = "BRAVO !";
          digicodeScreen.style.background = "yellow";
       } else if (digicodeScreen.innerHTML === "666") {
