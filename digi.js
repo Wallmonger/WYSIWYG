@@ -78,7 +78,8 @@ deleteNumbers.addEventListener("click", () => {
 })
 
 helpNumbers.addEventListener("click", () => {
-   digicodeScreen.innerHTML = "1k * 9 - 1"
+   digicodeScreen.innerHTML = "1k * 9 - 1";
+   digicodeScreen.style.fontSize = "5rem"
 })
 
 reloadNumbers.addEventListener("click", () => {
