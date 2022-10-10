@@ -96,7 +96,7 @@ darkMode.addEventListener("click", () => {
    if (myText.className === "lightmode") {
    myText.classList.replace("lightmode", "darkmode");
    myScreen.classList.replace("lightmode", "darkmode");
-   document.body.style.backgroundColor = "black";
+   document.body.style.backgroundColor = "#222222";
    
    
 } else {
@@ -148,10 +148,13 @@ turnAround.addEventListener("click", () => {
     if (boxes === document.querySelector('.mastermind')) {
              boxes.classList.replace("mastermind", "mastermindalt");
              arrow.style.visibility = "hidden";
+             myScreen.classList.add("overflowempire");
              
     }  else {
         boxes.classList.replace("mastermindalt", "mastermind")
         arrow.style.visibility = "visible"
+        boxes.style.overflow = "hidden";
+        myScreen.classList.remove("overflowempire")
     }
      
 });
