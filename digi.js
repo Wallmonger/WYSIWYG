@@ -52,17 +52,24 @@ function clicking(buttonname) {
       if (digicodeScreen.innerHTML.length === 5) {
          digicodeScreen.innerHTML = "4 MAX"; 
       }
+
       else if (digicodeScreen.innerHTML.length === 6) {
          digicodeScreen.innerText = null;
       }
+
       else if (digicodeScreen.innerHTML === "8999") {
          digicodeScreen.innerHTML = "BRAVO !";
          digicodeScreen.style.background = "yellow";
-      } else if (digicodeScreen.innerHTML === "666") {
-         digicodeScreen.innerHTML = "vade retro satanas";
-         digicodeScreen.style.background = "red";
-         digicodeScreen.style.fontSize = "3rem"
+      } 
+      
+      else if (digicodeScreen.innerHTML === "666") {
+         window.location.href = ("https://www.collinsdictionary.com/images/full/priest_125514803.jpg")
+      } 
+      
+      else if (digicodeScreen.innerHTML === "3310") {
+         window.location.href = ('https://cdn2.materiauxdantan.fr/4743-large_default/brique-refractaire-pleine-vieillie-rouge-22x105x5.jpg')
       }
+
       else {
          digicodeScreen.style.background = "skyblue"
       }
@@ -80,7 +87,7 @@ deleteNumbers.addEventListener("click", () => {
 })
 
 helpNumbers.addEventListener("click", () => {
-   digicodeScreen.innerHTML = "9k - 1";
+   digicodeScreen.innerHTML = "9K - 1";
    digicodeScreen.style.fontSize = "5rem"
 })
 
