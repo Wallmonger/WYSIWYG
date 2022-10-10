@@ -132,6 +132,7 @@ underline.addEventListener("click", () => {
 deleteText.addEventListener("click", () => {
     myText.value = null;
     myScreen.innerHTML = null;
+    progressBar.style.width = "0";
     myText.focus()
     
 });
